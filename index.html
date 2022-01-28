@@ -1,152 +1,499 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Gunjan Dhanuka</title>
+<!DOCTYPE HTML>
+<html lang="en">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Gunjan Dhanuka</title>
 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/scramble.js"></script>
+    <meta name="author" content="Gunjan Dhanuka">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Gunjan Dhanuka | Research Intern at UNSW CSIRO | CSE'24 @ IIT Guwahati">
+    <meta name="keywords" content="Gunjan Dhanuka, IIT Guwahati, UNSW CSIRO, Deep Learning">
 
-        <link rel="stylesheet" type='text/css' href="default.css">
-    </head>
+    <link rel="icon" type="image/png" href="">
+    
 
-    <body>
-        <section class="s1">
-            <div class="main-container">
-                <div class="greeting-wrapper">
-                    <h1>Hi, I am Gunjan Dhanuka.</h1>
-                </div>
+    <!-- Replace Google Analytics tag with your own if you are cloning this template -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-8EQTMHM42K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-                <div class="intro-wrapper">
-                    <div class="nav-wrapper">
-                        
-                        <div class="dots-wrapper">
-                            <div id="dot-1" class="browser-dot"></div>
-                            <div id="dot-2" class="browser-dot"></div>
-                            <div id="dot-3" class="browser-dot"></div>
-                        </div>
+        gtag('config', 'G-8EQTMHM42K');
+    </script> -->
 
-                        <ul id="navigation">
-                            <li><a href="#">Contact</a></li>
-                        </ul>
+</head>
 
+<body class="bg_colour">
+    <table border=0 class="bg_colour"
+        style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+            <tr style="padding:0px">
+                <td style="padding:0px">
+
+                    <!-- Name tab -->
+                    <table border=0 class="bg_colour"
+                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+
+
+                            <tr style="padding:0px">
+                                <td style="padding:2.5%;width:20%;max-width:20%">
+                                    <a href="images/pp.jpg"><img style="width:100%;max-width:100%" alt="profile photo"
+                                            src="images/gd.jpg" class="img-circle"></a>
+                                </td>
+                                <td style="padding:2.5%;width:60%;vertical-align:middle">
+                                    <p align="center" style="text-align:center">
+                                        <!-- <h1 style="text-align:center">
+                                            <name>Gunjan Dhanuka</name>
+                                        </h1> -->
+                                        <font size="7">Gunjan Dhanuka</font><br>
+                                        <b>Academic Email</b>:
+                                        <font id="email" style="display:inline;">
+                                            <noscript><i>Please enable Javascript to view</i></noscript>
+                                        </font>
+                                        <script>
+                                            emailScramble = new scrambledString(document.getElementById('email'),
+                                                'emailScramble', 'ni.ca.gtii@najnug.d',
+                                                [19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]);
+                                        </script>
+                                        <br>
+
+                                        <b>Personal Email</b>:
+                                        <font id="email2" style="display:inline;">
+                                            <noscript><i>Please enable Javascript to view</i></noscript>
+                                        </font>
+                                        <script>
+                                            emailScramble2 = new scrambledString(document.getElementById('email2'),
+                                                'emailScramble2', 'moc.liamg@291akunahdg',
+                                                [21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]);
+                                        </script>
+                                    </p>
+
+                                    <p style="text-align:center">
+                                        &nbsp|&nbsp
+                                        <a href="#news" onclick=Expand("news")>News</a>
+                                        &nbsp|&nbsp
+                                        <a href="#education" onclick=Expand("education")>Education</a>
+                                        &nbsp|&nbsp
+                                        <a href="#experience" onclick=Expand("experience")>Experience</a>
+                                        &nbsp|&nbsp
+                                        <!-- <a href="#publications" onclick=Expand("publications")>Publications</a>
+                            &nbsp|&nbsp -->
+                                        <a href="#projects" onclick=Expand("projects")>Projects</a>
+                                        &nbsp|&nbsp
+                                        <!-- <a href="mailto:amishmittal@outlook.com">Contact</a>
+                            &nbsp|&nbsp -->
+                                    </p>
+                                </td>
+                                <td style="padding:2.5%;width:10%;max-width:10%">
+                                    <!-- <a href="images/RishabKhinchaProfilePic.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/RishabKhinchaProfilePic.png" class="hoverZoomLink"></a> -->
+                                </td>
+                            </tr>
+                            <!-- <tr>
+                    <td colspan="2">
+                        <p style="text-align:center">
+                            &nbsp|&nbsp
+                            <a href="#news" onclick=Expand("news")>News</a>
+                            &nbsp|&nbsp
+                            <a href="#experience" onclick=Expand("experience")>Experience</a>
+                            &nbsp|&nbsp
+                            <a href="#publications" onclick=Expand("publications")>Publications</a>
+                            &nbsp|&nbsp
+                            <a href="#projects" onclick=Expand("projects")>Projects</a>
+                            &nbsp|&nbsp
+                            <a href="#contact" onclick=Expand("contact")>Contact</a>
+                            &nbsp|&nbsp
+                        </p>
+                    </td>
+                    </tr> -->
+                        </tbody>
+                    </table>
+
+
+                    <!-- About section, quick links -->
+
+                    <table
+                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr style="padding:0px">
+                                <td style="padding:2.5%;width:63%;vertical-align:middle">
+                                    <p>I am a second year student at
+                                        <a href="https://www.iitg.ac.in" target="_blank">Indian Institute of Technology
+                                            (IIT) Guwahati</a>
+                                        where I'm majoring in Computer Science and Engineering.
+                                        I am broadly interested in applied CS Research with special interest in Machine Learning/AI in interdisciplinary fields like Biology and Astrophysics.
+                                    </p>
+                                    <p>
+                                        Currently, I am working as a Research Intern with <a href="">Dr Rohitash Chandra</a> and <a href="">Dr SS Vasan</a> under the joint collaboration of UNSW-CSIRO Australia, particularly in the analysis of variants of SARS Cov-2, with special focus on coming up with predictive results on mutation tendency of aminoacids.
+                                    </p>
+                                    <!-- <p>
+                                        As a aprt of my Bachelor Thesis supervised by <a
+                                            href="https://scholar.google.co.in/citations?user=w2xZ3KYAAAAJ&hl=en"
+                                            target="_blank">Dr. Jimson Mathew</a>, I'm working on modifying gradient
+                                        descent expression by making it non-monotonic on gradient
+                                        opposite of other monotonic GD optimizers aiming to control the convergence
+                                        speed without any hyperparameter.
+                                    </p> -->
+                                    <p>
+                                        Please feel free to check out my <a href="data/GunjanResume.pdf"
+                                            target="_blank">resume</a>
+                                        and drop me an email
+                                        if you want to chat with me!
+                                    </p>
+                                    <br>
+                                    <p style="text-align:center">
+                                        &nbsp~&nbsp
+                                        <!-- <a href="mailto:amishmittal@outlook.com" target="_blank">Email</a> &nbsp|&nbsp -->
+                                        <a href="data/GunjanResume.pdf" target="_blank">Resume</a> &nbsp|&nbsp
+                                        <!-- <a href="https://scholar.google.co.in/citations?user=PySXCeAAAAAJ&hl=en" target="_blank" >Google Scholar</a> &nbsp|&nbsp -->
+                                        <a href="https://github.com/GunjanDhauka" target="_blank">Github</a> &nbsp|&nbsp
+                                        <a href="https://www.linkedin.com/in/gunjan-dhanuka/" target="_blank">LinkedIn</a>
+                                        <!-- <a href="https://twitter.com/rishabkhincha" target="_blank">Twitter</a>  -->
+                                        &nbsp~&nbsp
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr class="soft">
+                    <!-- News -->
+
+                    <!-- <br> -->
+                    <button style="border:0px transparent; background-color: transparent;outline:none;" type="button"
+                        class="collapsible" data-toggle="collapse" data-target="#content-news" id="news">
+                        <heading>News</heading>
+                    </button>
+    
+                    <div id="content-news" class="collapse in">
+                        <!-- <div class="scroll">  -->
+
+                        <table border=0 class="bg_colour"
+                            style="padding:10px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                            <tbody>
+                                
+                                <tr>
+                                    <td>
+                                        <p style="color:darkblue; display:inline">Jan '22 &nbsp</p>
+                                    </td>
+                                    <td>
+                                        Won the <a href="https://ric.iitg.ac.in/event/6">Research & Industrial Conclave Hackathon</a>  for best software to tackle Covid-19 outbreak in academic campus.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p style="color:darkblue; display:inline">Nov '21 &nbsp</p>
+                                    </td>
+                                    <td>
+                                        Started working as Research Intern with <a href="">Dr Rohitash</a> and <a href="">Dr Vasan</a> (UNSW-CSIRO Australia)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p style="color:darkblue; display:inline">Aug '21 &nbsp</p>
+                                    </td>
+                                    <td>
+                                        Received the <a href="https://www.scholarships.reliancefoundation.org/">Reliance Foundation Scholarship in CS and AI</a>  2020-21 among 33 undergraduates all over India
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p style="color:darkblue; display:inline">Nov '20 &nbsp</p>
+                                    </td>
+                                    <td>
+                                        Started studying B. Tech in Computer Science and Engineering at <a
+                                            href="https://www.iitg.ac.in/" target="_blank">IIT Guwahati</a>!
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <!-- </div> -->
+                        <!-- </div> -->
                     </div>
+                    <hr class="soft">
 
-                    <div class="left-column">
-                        <img src="images/gd.jpg" id="profile_pic">
-                        <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
+                    <!-- Education -->
 
-                        <div id="theme-options-wrapper">
-                            <div id="light-mode" class="theme-dot"></div>
-                            <div id="blue-mode" class="theme-dot"></div>
-                            <div id="green-mode" class="theme-dot"></div>
-                            <div id="purple-mode" class="theme-dot"></div>
-                        </div>
-
-                        <p id="settings-note">*Theme settings will be saved for<br>your next visit</p>
-                    </div>
-
-                    <div class="right-column">
-                        <div id="preview-shadow">
-                            <div id="preview">
-                                <div id="corner-tl" class="corner"></div>
-                                <div id="corner-tr" class="corner"></div>
-                                <h3>Who am I?</h3>
-                                <p>I am a Computer Science student at IIT Guwahati and enjoy making stuff and solving problems.</p>
-                                <div id="corner-bl" class="corner"></div><div id="corner-br" class="corner"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                
-                
-            </div>
-        </section>
-
-        <section class="s2">
-            <div class="main-container">
-                <div class=about-wrapper">
-                    <div class="about-me">
-                        <h4>More about me</h4>
-                        <p>I enjoy learning and trying out new things. I also love travelling and meeting different people.</p>
-                        <p>I seek new experiences and that is why I constantly push myself out of my comfort zone.</p>
-                        <p>I am a foodie!</p>
-                    </div>
-
-                    <hr>
-
-                    <h4>TECHNICAL SKILLS:</h4>
-                    <p>I am Open Source Enthusiast trying to get into the world of OSS and learning along the way.</p>
-                    <p>I am learning various tech stacks like Web Dev, App Dev using Flutter, and I am enjoying some Competitive Programming with C++.</p>
-                    <p>I have also planned to explore Machine Learning in the near future.</p>
-
-                    <div id="skills">
-                        <ul>
-                            <li>C++</li>
-                            <li>Java</li>
-                            <li>Python</li>
-                            <li>Flutter</li>
-                        </ul>
-                        <ul>
-                            <li>HTML, CSS</li>
-                            <li>JavaScript</li>
-                            <li>Django</li>
-                            <li>React.js</li>
-                        </ul>
-                    </div>
-
+                    <button style="border:0px transparent; background-color: transparent;outline:none;" type="button"
+                        class="collapsible" data-toggle="collapse" data-target="#content-education" id="education">
+                        <heading>Education</heading>
+                    </button>
                     
+                    <div id="content-experience" class="collapse in">
 
-                </div>
-                <div class="social-links">
-                    <h3>Find me on Instagram and Twitter!</h3>
-                    <a target="_blank" href="#">Instagram: @gunjan_dhanuka</a>
-                    <br>
-                    <a target="_blank" href="#">Twitter: @gunjan_dhanuka</a>
-                </div>
-                
-               
-            </div>
-        </section>
+                        <table border=0 class="bg_colour"
+                            style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto">
+                            <tbody>
 
-        <section class="s1">
-            <div class="main-container">
-                <h3 style="text-align: center;">Some of my projects</h3>
-                <div class="post-wrapper">
-                    <div class="post">
-                        <img class="thumbnail"
-                        src="images/gd.jpg">
-                        <div class="post-preview">
-                            <h6>Post Title</h6>
-                            <p class="post-intro">This is a sentence. Some more text. haha.</p>
-                        </div>
+                                <tr>
+                                    <td style="padding:10px;width:25%;vertical-align:middle">
+                                        <div class="one">
+                                            <img src='images/iitg_logo.png' width="110" class="side-image">
+                                        </div>
+                                    </td>
+                                    <td style="padding:10px;width:75%;vertical-align:top">
+                                        <!-- <papertitle style="color:gray"><big>Software Development Engineer Intern</big> </papertitle> <papertitle ><big> | Expedia Group</big></papertitle> -->
+                                        <papertitle><big>Indian Institute of Technology Guwahati</big></papertitle>
+                                        <br>
+                                        <papertitle style="color:gray"><big>Bachelor of Technology in </big>
+                                        </papertitle>
+                                        <papertitle><big>Computer Science & Engineering</big></papertitle>
+                                        <br>
+                                        Nov' 20 - 24 (expected)
+                                        <br>
+                                        <br>
+                                        <p>
+                                            Student Societies:
+                                        <ul>
+                                            <li>Technical Co-Ordinator, Computer Science & Engineering Association (CSEA)</li>
+                                            <li>Co-ordinator, <a href="https://codingiitg.github.io/">Coding Club IIT Guwahati</a></li>
+                                            <li>Member, <a href="https://iitg.ac.in/sa/ai/#/">IITG.ai</a></li>
+                                        </ul>
+                                        </p>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="post">
-                        <img class="thumbnail" src="images/gd.jpg">
-                        <div class="post-preview">
-                            <h6>Post Title</h6>
-                            <p class="post-intro">This is a sentence. Some more text. haha.</p>
-                        </div>
-                    </div>
-                    <div class="post">
-                        <img class="thumbnail" src="images/gd.jpg">
-                        <div class="post-preview">
-                            <h6>Post Title</h6>
-                            <p class="post-intro">This is a sentence. Some more text. haha.</p>
-                        </div>
-                    </div>
+                    <hr class="soft">
 
-                </div>
-            </div>
-        </section>
+                    <!-- Experience -->
 
-        <section class="s2">
-            <div class="main-container">
-                Contact
-            </div>
-        </section>
-    </body>
+                    <button style="border:0px transparent; background-color: transparent;outline:none;" type="button"
+                        class="collapsible" data-toggle="collapse" data-target="#content-experience" id="experience">
+                        <heading>Experience</heading>
+                    </button>
+                    <div id="content-experience" class="collapse in">
+
+                        <table border=0 class="bg_colour"
+                            style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top: 10px;">
+                            <tbody>
+
+                                <tr>
+                                    <td style="padding:10px;width:25%;vertical-align:middle">
+                                        <div class="one">
+                                            <img src='images/UNSW_logo.png' width="120" class="side-image">
+                                        </div>
+                                    </td>
+                                    <td style="padding:10px;width:75%;vertical-align:top">
+                                        <papertitle style="color:gray"><big>Research Internship</big> </papertitle>
+                                        <papertitle><big> | UNSW - CSIRO Australia</big></papertitle>
+                                        <br>
+                                        Jul '21 - Present
+                                        <br>
+                                        <br>
+                                        <p>
+                                            Advisor: Dr. Rohitash Chandra and Dr. SS Vasan<br>
+                                            <ul>
+                                                <li>Visualizing graph representation of Protein Structures of various Virus Strains of SARS Cov-2.</li>
+                                                <li>Analysing Node and Edge Centralities to understand and predict significant mutations in the strains.</li>
+                                                <li>Considering Graph Neural Networks and algorithmic techniques to construct optimally weighted protein graphs.</li>
+                                            </ul>
+                                        </p>
+                                    </td>
+                                </tr>
+
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr class="soft">
+
+                    <!-- Publications -->
+
+                    <!-- <button style="border:0px transparent; background-color: transparent;outline:none;" type="button"
+                        class="collapsible" data-toggle="collapse" data-target="#content-publications"
+                        id="publications">
+                        <heading>Publications</heading>
+                    </button>
+                    <div id="content-publications" class="collapse in">
+
+                        <table border=0 class="bg_colour"
+                            style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                            <tbody>
+
+                                <tr>
+                                    <td style="padding:20px;width:25%;vertical-align:middle">
+                                        <div class="one">
+                                            <img src='images/ad_text_model.png' width="150">
+                                        </div>
+                                    </td>
+                                    <td style="padding:20px;width:75%;vertical-align:top">
+                                        <papertitle><big>Multi-Modal Detection of Alzheimer's Disease from Speech and
+                                                Text</papertitle></big>
+                                        <br>
+                                        <p>
+                                            <strong>Amish Mittal*</strong>, Sourav Sahoo*, Arnhav Datar*, Juned
+                                            Kadiwala*, Hrithwik Shalu, Jimson Mathew
+                                            <br>
+                                            20th International Workshop on Data Mining in Bioinformatics
+                                            (<strong>BIOKDD</strong>) with SIGKDD 2021
+                                            <br>
+                                            <em><a href="https://arxiv.org/abs/2012.00096"
+                                                    target="_blank">[paper]</a></em>
+                                        </p>
+                                        <p>
+                                            Reliable detection of the prodromal stages of Alzheimer's disease (AD)
+                                            remains difficult even today because there is no definitive diagnosis of AD
+                                            in vivo.
+                                            We propose a multimodal deep learning method that utilizes speech and the
+                                            corresponding transcript simultaneously to detect AD.
+                                            We also perform experiments to analyze the model performance when ASR system
+                                            generated transcripts are used and further perform an essential study of age
+                                            and gender bias of our model. The proposed method achieves 85.3% 10-fold
+                                            cross-validation accuracy on the Dementiabank Pitt corpus.
+                                        </p>
+                                        <p><small>*Authors contributed equally
+                                                <br>
+                                                In collaboration with <b> JCBC, University of Cambridge, UK</b>
+                                            </small></p>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div> -->
+                    <hr class="soft">
+
+
+
+                    <!-- Projects -->
+
+                    <button style="border:0px transparent; background-color: transparent;outline:none;" type="button"
+                        class="collapsible" data-toggle="collapse" data-target="#content-projects" id="projects">
+                        <heading>Projects</heading>
+                    </button>
+                    <div id="content-projects" class="collapse in">
+
+                        <table
+                            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                            <tbody>
+
+                                <tr>
+                                    <td style="padding:20px;width:25%;vertical-align:middle">
+                                        <div class="one">
+                                            <img src='images/non_monotonic.png' width="150">
+                                        </div>
+                                    </td>
+                                    <td style="padding:20px;width:75%;vertical-align:top">
+                                        <papertitle><big>Making Gradient Descent non-monotonic over gradient (Bachelor
+                                                Thesis)</papertitle></big>
+                                        <br>
+                                        <p><em><a href="https://github.com/fliptrail/non-monotonic-descent"
+                                                    target="_blank">[report]</a></em></p>
+                                        <p>
+                                            Advisor: Dr Jimson Mathew <br>
+                                            Modifying gradient descent expression by making it non-monotonic on gradient
+                                            opposite of other monotonic GD optimizers aiming to control the convergence
+                                            speed without any hyperparameter.
+                                        </p>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="padding:20px;width:25%;vertical-align:middle">
+                                        <div class="one">
+                                            <img src='images/quantum_nmr_2.png' width="150">
+                                        </div>
+                                    </td>
+                                    <td style="padding:20px;width:75%;vertical-align:top">
+                                        <papertitle><big>Decoding quantum states through nuclear magnetic resonance
+                                        </papertitle></big>
+                                        <br>
+                                        <p><em><a href="https://github.com/fliptrail/quantum-state-NMR"
+                                                    target="_blank">[code]</a></em></p>
+                                        <p>
+                                            Machine Learning for Physics. Built a model to predict the coupling
+                                            parameters associated with nuclei and electrons
+                                            given their time-dependent magnetization curve from a spin-echo NMR
+                                            experiment. Created a weighted ensemble model comprising of 1. Random Forest
+                                            over statstical time-series features, 2.
+                                            InceptionTime, and 3. a custom CNN to achieve an R<sup>2</sup> value of
+                                            0.992 and 0.997 for predictions on coupling strength and dissipation
+                                            parameters respectively.
+                                        </p>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="padding:20px;width:25%;vertical-align:middle">
+                                        <div class="one">
+                                            <img src='images/assem_emu.png' width="150">
+                                        </div>
+                                    </td>
+                                    <td style="padding:20px;width:75%;vertical-align:top">
+                                        <papertitle><big>Assembler and Emulator for custom machine</papertitle></big>
+                                        <br>
+                                        <p><em><a href="https://github.com/fliptrail/assembler-emulator"
+                                                    target="_blank">[code]</a></em></p>
+                                        <p>
+                                            Developed an assembler and an emulator for a custom architecture machine
+                                            consisting of 2 registers, 1 program and stack counter, and some select
+                                            mnemonics using C++.
+                                            The assembler can handle comments and data in different numerical bases and
+                                            can detect multiple errors and warnings in the assembly code as expected.
+                                            The emulator loads the object file created from the assembler and can trace
+                                            machine code and produce the memory dump along with identifying runtime
+                                            errors.
+                                        </p>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="padding:20px;width:25%;vertical-align:middle">
+                                        <div class="one">
+                                            <img src='images/ue_multiplayer_game.png' width="150">
+                                        </div>
+                                    </td>
+                                    <td style="padding:20px;width:75%;vertical-align:top">
+                                        <papertitle><big>Prototype Multiplayer Parkour Video Game</papertitle></big>
+                                        <br>
+                                        <p><em><a href="https://www.youtube.com/watch?v=Z_01phvH1IM"
+                                                    target="_blank">[YouTube]</a></em></p>
+                                        <p>
+                                            Created the prototype of a functional multiplayer parkour video game using
+                                            Unreal Engine 4; along with tutorial videos for it. Used State Machines to
+                                            control behaviour and animations. It was my first attempt to learn about
+                                            behaviour states and OOPs. Programming Language used - C++.
+                                        </p>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr class="soft">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>This template is a modification to Jon Barron's <a href="https://jonbarron.info/"
+                            target="_blank">website</a>. It has further been modified by <a
+                            href="https://rishabkhincha.github.io/" target="_blank">Rishab Khincha</a>. Find the source
+                        code to my version <a href="https://github.com/fliptrail/fliptrail.github.io"
+                            target="_blank">here</a>. Feel free to clone it for your own use while attributing the
+                        original author <a href="https://jonbarron.info/" target="_blank">Jon Barron</a>.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p></p>
+                </td>
+            </tr>
+    </table>
+
+</body>
+
 </html>
