@@ -85,6 +85,10 @@ a {
   font-size: 14px
 }
 
+/* td {
+  white-space: nowrap;
+} */
+
 strong {
   font-family: 'Titillium Web', sans-serif;
   font-size: 14px;
